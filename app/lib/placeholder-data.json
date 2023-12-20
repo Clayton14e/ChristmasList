@@ -1,0 +1,39 @@
+{
+  "people":
+  [
+{
+  "name": "Mom",
+  "relationship": "Mother", 
+  "gifts": [
+    {
+      "name": "Gift Name",
+      "price": 15.50,
+      "status": false
+    }
+  ]
+},
+{
+  "name": "Grandpa",
+  "relationship": "Grandfather", 
+  "gifts": [
+    {
+      "name": "Gift Name",
+      "price": 1.50,
+      "status": false
+    }
+  ]
+},
+{
+  "name": "Dad",
+  "relationship": "Father", 
+  "gifts": [
+    {
+      "name": "Gift Name",
+      "price": 29,
+      "status": false
+    }
+  ]
+}
+  ]
+}
+

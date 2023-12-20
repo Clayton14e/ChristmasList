@@ -10,21 +10,24 @@ import {
   LatestInvoicesSkeleton,
   CardsSkeleton 
 } from '@/app/ui/skeletons';
-
+import PeopleTable from '@/app/ui/dashboard/peopletable';
  
 export default async function Page() {
-  const {
-    numberOfInvoices,
-    numberOfCustomers,
-    totalPaidInvoices,
-    totalPendingInvoices,
-  } = await fetchCardData()
+  // const {
+  //   numberOfInvoices,
+  //   numberOfCustomers,
+  //   totalPaidInvoices,
+  //   totalPendingInvoices,
+  // } = await fetchCardData()
   return (
     <main>
-      <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
-        Dashboard
-      </h1>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="flex w-full items-center justify-between">
+        <h1 className={`${lusitana.className} text-3xl`}>People</h1>
+      </div>
+      <div>
+        <PeopleTable />
+      </div>
+      {/* <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <Suspense fallback={<CardsSkeleton />}>
           <CardWrapper />
         </Suspense>
@@ -35,8 +38,8 @@ export default async function Page() {
         </Suspense>
         <Suspense fallback={<LatestInvoicesSkeleton />}>
           <LatestInvoices />
-        </Suspense>
-      </div>
+        </Suspense> 
+  </div> */}
     </main>
   );
 }
